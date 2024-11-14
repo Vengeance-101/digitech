@@ -1,0 +1,62 @@
+// Partner Style
+.partner-heading {
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    top: -200px;
+    content: "";
+    height: 500px;
+    width: 30px;
+    background: var(--white);
+    transform: skewX(-10deg);
+  }
+
+  &::before {
+    position: absolute;
+    right: 0;
+    top: -200px;
+    content: "";
+    height: 400px;
+    width: 400%;
+    background: #290c0c;
+    z-index: -1;
+    transform: skewX(-8deg);
+  }
+
+  h3 {
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--white);
+
+    strong {
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--color-primary);
+      text-decoration: underline;
+    }
+  }
+}
+
+.partner-shape {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: right bottom;
+}
+
+.bg_color {
+  background: linear-gradient(
+    90deg,
+    rgba(17, 8, 7, 0.29) 0%,
+    rgba(108, 8, 8, 0.48) 80%,
+    rgba(36, 0, 0, 0.5) 100%
+  );
+  height: 150px;
+}

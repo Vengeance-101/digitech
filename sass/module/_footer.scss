@@ -1,0 +1,48 @@
+.footerbgsets {
+  background-image: url("/images/footer/footerbg.webp") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.navlinksActive {
+  border: 1px solid dimgrey;
+  background-color: #002147 !important;
+  border-top: none;
+  border-bottom: red !important;
+}
+
+.estiva-backlink {
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.socialseffect:hover {
+  color: red;
+  border: 2px double #333;
+  opacity: 0.9;
+  -webkit-transform: rotate(360deg) !important;
+  -ms-transform: rotate(360deg) !important;
+  transform: rotate(360deg) !important;
+  -webkit-box-shadow: 2px 2px 24px #fff;
+  box-shadow: 2px 2px 24px #fff;
+}
+
+.estiva_gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(5, 25, 35, 1) 0%,
+    rgba(53, 1, 21, 1) 50%,
+    rgba(5, 32, 35, 1) 100%
+  );
+}
+
+.footer_social_icon {
+  background-color: rgba(6 53 80 / 43%);
+}
+.footer_border {
+  border: ridge 1px #f5deb327;
+  border-right: none;
+  border-left: none;
+}

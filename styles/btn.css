@@ -1,0 +1,324 @@
+/* ============================================================== 
+    # Button Styles
+=================================================================== */
+
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all 0.35s ease-in-out;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  -webkit-box-shadow: inherit;
+  box-shadow: none;
+  font-size: 16px;
+  letter-spacing: 0;
+  padding: 13px 30px;
+  background: #e7edf8;
+  position: relative;
+  z-index: 1;
+}
+
+.btn:focus,
+.btn.active {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inherit;
+  box-shadow: inherit;
+  border: 2px solid transparent;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  color: var(--white);
+}
+
+.btn.radius {
+  border-radius: 6px;
+}
+
+.btn.btn-border {
+  border: 2px solid #e7e7e7;
+  background: transparent;
+}
+
+.btn.btn-border:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn.btn-border.animation::after {
+  position: absolute;
+  top: 0;
+  right: inherit;
+  bottom: inherit;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  background: #e7e7e7;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn.btn-border.animation:hover {
+  border-color: #e7e7e7;
+  color: var(--dark);
+}
+
+.btn.btn-border.animation:hover::after {
+  width: 100%;
+}
+
+.btn.btn-border-dark {
+  border: 2px solid var(--dark);
+  background: transparent;
+}
+
+.btn.btn-border-dark:hover {
+  background: var(--dark);
+  border-color: var(--dark);
+}
+
+.btn.btn-border-dark.animation::after {
+  position: absolute;
+  top: 0;
+  right: inherit;
+  bottom: inherit;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  background: var(--dark);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn.btn-border-dark.animation:hover {
+  border-color: var(--dark);
+  color: var(--white);
+}
+
+.btn.btn-border-dark.animation:hover::after {
+  width: 100%;
+}
+
+.btn.btn-border-theme {
+  border: 2px solid var(--color-primary);
+  background: transparent;
+}
+
+.btn.btn-border-theme:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn.btn-border-theme.animation::after {
+  position: absolute;
+  top: 0;
+  right: inherit;
+  bottom: inherit;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  background: var(--color-primary);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn.btn-border-theme.animation:hover {
+  border-color: var(--color-primary);
+  color: var(--white);
+}
+
+.btn.btn-border-theme.animation:hover::after {
+  width: 100%;
+}
+
+.btn.btn-border-light {
+  border: 2px solid var(--white);
+  background: transparent;
+  color: var(--white);
+}
+
+.btn.btn-border-light:hover {
+  background: var(--white);
+  border-color: var(--white);
+  color: var(--dark);
+}
+
+.btn.btn-border-light.animation::after {
+  position: absolute;
+  top: 0;
+  right: inherit;
+  bottom: inherit;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  background: var(--white);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn.btn-border-light.animation:hover {
+  border-color: var(--white);
+  color: var(--dark);
+}
+
+.btn.btn-border-light.animation:hover::after {
+  width: 100%;
+}
+
+.btn.btn-gradient {
+  border: none;
+  color: var(--white);
+}
+
+.btn.btn-gradient::after {
+  position: absolute;
+  top: 0;
+  right: inherit;
+  bottom: inherit;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary),
+    var(--color-primary)
+  );
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-size: 220%;
+}
+
+.btn.btn-gradient:hover::after {
+  background-position: -70% 0;
+}
+
+.btn.btn-gradient.active {
+  background-position: -70% 0;
+}
+
+.btn.btn-theme {
+  color: var(--white);
+  border: none;
+  background: var(--color-primary);
+}
+
+.btn.btn-theme::after {
+  position: absolute;
+  top: inherit;
+  right: inherit;
+  bottom: inherit;
+  left: -5%;
+  content: "";
+  height: 150px;
+  width: 115%;
+  z-index: -1;
+  background-color: var(--dark);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: translateY(-45%) skew(25deg) scale(0);
+  transform: translateY(-45%) skew(25deg) scale(0);
+}
+
+.shadow .btn.btn-theme::after {
+  background-color: var(--white) !important;
+}
+
+.shadow .btn.btn-theme:hover {
+  color: var(--color-heading);
+}
+
+.btn.btn-theme:hover::after {
+  -webkit-transform: translateY(-45%) skew(25deg) scale(1.2);
+  transform: translateY(-45%) skew(25deg) scale(1.2);
+}
+
+.btn.btn-theme.secondary {
+  color: var(--white);
+  border: none;
+  background: var(--color-secondary);
+}
+
+.btn.btn-theme.secondary::after {
+  position: absolute;
+  top: inherit;
+  right: inherit;
+  bottom: inherit;
+  left: -5%;
+  content: "";
+  height: 150px;
+  width: 115%;
+  z-index: -1;
+  background-color: var(--dark);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: translateY(-45%) skew(25deg) scale(0);
+  transform: translateY(-45%) skew(25deg) scale(0);
+}
+
+.text-light .btn.btn-theme.secondary::after {
+  background-color: var(--white);
+}
+
+.text-light .btn.btn-theme.secondary:hover {
+  color: var(--color-heading);
+}
+
+.btn.btn-theme.secondary:hover::after {
+  -webkit-transform: translateY(-45%) skew(25deg) scale(1.2);
+  transform: translateY(-45%) skew(25deg) scale(1.2);
+}
+
+.btn.btn-theme.hover-light::after {
+  background-color: var(--white);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn.btn-theme.hover-light:hover {
+  color: var(--dark);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn.btn-theme.hover-light:hover::after {
+  -webkit-transform: translateY(-45%) skew(25deg) scale(1.2);
+  transform: translateY(-45%) skew(25deg) scale(1.2);
+}
+
+.secondary .btn.btn-theme.active-btn {
+  background: var(--color-secondary);
+}
+
+.btn.btn-light {
+  color: var(--color-heading);
+  border: none;
+  background: var(--white);
+  border: 2px solid transparent;
+}
+
+.btn.btn-light.btn-md {
+  padding: 13px 52px;
+}
+
+.btn.btn-light:hover {
+  color: var(--white);
+  background: transparent;
+  border: 2px solid var(--white);
+}

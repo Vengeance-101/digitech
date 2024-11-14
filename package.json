@@ -1,0 +1,37 @@
+{
+  "name": "digi",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "next": "^14.2.13",
+    "next-pwa": "^5.6.0",
+    "next-seo": "^6.6.0",
+    "react": "^18",
+    "react-circular-progressbar": "^2.1.0",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "react-parallax-tilt": "^1.7.107",
+    "react-simple-scroll-up": "^0.2.3",
+    "react-toastify": "^10.0.5",
+    "sharp": "^0.33.5",
+    "swiper": "^11.1.4",
+    "wowjs": "^1.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@types/react": "^18.3.11",
+    "babel-preset-next": "^1.4.0",
+    "eslint": "^9.12.0",
+    "eslint-config-next": "^14.2.15",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}

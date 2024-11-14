@@ -1,0 +1,92 @@
+// ==============================================================
+// Variables
+// ==============================================================
+$call-bg: var(--call-bg);
+$white: var(--white);
+
+// ==============================================================
+// Call Back Style
+// ==============================================================
+.request-call-back-area {
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: $call-bg;
+    mix-blend-mode: multiply;
+    z-index: -1;
+  }
+
+  @media only screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+// ==============================================================
+// Achievements Counter Style
+// ==============================================================
+.achivement-counter {
+  display: inline-block;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 50px;
+
+  li {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    i {
+      display: inline-block;
+      font-size: 60px;
+      margin-right: 20px;
+      margin-top: 5px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      display: block;
+      text-align: center;
+
+      i {
+        margin: 0;
+        margin-bottom: 10px;
+        line-height: 1;
+      }
+    }
+  }
+
+  .fun-fact {
+    .counter {
+      color: $white;
+      font-size: 60px;
+
+      @media only screen and (max-width: 767px) {
+        justify-content: center;
+      }
+    }
+
+    .medium {
+      color: $white;
+      font-weight: 500;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    border: none;
+    padding: 0;
+
+    display: block;
+  }
+}

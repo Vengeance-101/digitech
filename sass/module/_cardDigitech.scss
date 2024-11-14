@@ -1,0 +1,154 @@
+// Variables
+$primary-color: var(--color-primary);
+$white-color: var(--white);
+$z-index-negative: -1;
+$animation-duration: 3s;
+$rotate-animation-duration: 20s;
+
+// Mixins
+@mixin rotate-animation {
+  -webkit-animation: rotateme $rotate-animation-duration linear infinite;
+  animation: rotateme $rotate-animation-duration linear infinite;
+}
+
+@mixin move-left-bounce {
+  animation: moveLeftBounce $animation-duration linear infinite;
+}
+
+// Keyframes
+@keyframes rotateme {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+// Card Styles
+.rotateme {
+  @include rotate-animation;
+}
+
+.testi-shape-thumb,
+.service-shape {
+  @include move-left-bounce;
+  z-index: $z-index-negative;
+  opacity: 0.2;
+}
+
+.service-shape {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.digi-shape-thumb1 {
+  position: absolute;
+  right: 30%;
+  top: 5%;
+}
+
+.bottom-shape-light {
+  position: relative;
+  z-index: 1;
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 409px;
+    content: "";
+    bottom: 0;
+    right: 0;
+    z-index: $z-index-negative;
+    background: url("/images/home/home-card.webp") center/cover no-repeat;
+  }
+}
+
+.digitechmateService {
+  .info {
+    background: $white-color;
+    padding: 60px 40px;
+    position: relative;
+
+    border-top: none;
+
+    > span {
+      display: block;
+      text-transform: uppercase;
+      color: $primary-color;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  }
+
+  h3 {
+    margin-bottom: 25px;
+  }
+}
+
+.project-swiper-nav {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+
+  > div {
+    height: 40px;
+    width: 40px;
+    background: $primary-color;
+    z-index: 9;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      top: 7px;
+      content: "";
+      height: 100%;
+      width: 100%;
+      font-family: "Font Awesome 5 Pro";
+      text-align: center;
+      color: $white-color;
+    }
+  }
+
+  .project-pagination {
+    background: transparent;
+    position: absolute;
+    line-height: 40px;
+    color: $white-color;
+    font-size: 24px;
+    font-weight: 600;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+
+  @media (max-width: 1024px) {
+    top: -550px;
+  }
+  @media (max-width: 830px) {
+    top: -580px;
+  }
+  @media (max-width: 610px) {
+    top: -650px;
+  }
+  @media (max-width: 412px) {
+    top: -750px;
+  }
+  @media (max-width: 370px) {
+    display: none;
+  }
+}
+
+.digitechmateService-carousel {
+  padding-top: 120px;
+  margin-top: 30px;
+}

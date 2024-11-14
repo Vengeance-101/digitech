@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "next/babel",
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@next/next/recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off", // Next.js automatically imports React, so this rule is unnecessary
+    "semi": ["error", "always"], // Enforces semicolons at the end of statements
+    "quotes": ["error", "single"], // Enforces single quotes for consistency
+    "no-unused-vars": "warn", // Warns about unused variables
+    "no-console": "warn", // Warns about console.logs in production code
+    "react/jsx-uses-react": "off", // Disable for Next.js (React 17+)
+    "react/jsx-uses-vars": "error" // Prevent variables used in JSX from being marked as unused
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  }
+}

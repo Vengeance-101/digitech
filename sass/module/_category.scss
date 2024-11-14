@@ -1,0 +1,32 @@
+.estiva_cate_service {
+  background-image: url("/home-card.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #dbc6c6;
+  background-blend-mode: hard-light;
+}
+
+.estiva_cate_car {
+  background: hsla(0, 0%, 100%, 0.51);
+  box-shadow: 10px 10px 40px -20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: border 0.3s ease-in-out;
+  overflow: hidden;
+
+  &:hover {
+    border-left: 3px solid rgba(159, 7, 7, 0.08);
+    border-right: 3px solid rgba(159, 7, 7, 0.08);
+
+    h3,
+    p {
+      transform: translateY(-20px);
+    }
+
+    img {
+      transform: scale(1.2);
+    }
+  }
+}

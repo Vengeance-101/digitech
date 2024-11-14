@@ -1,0 +1,181 @@
+:root {
+  /* Color Definitions */
+  --color-primary: #df0a0a;
+  --color-secondary: #0b57e3;
+  --color-accent: #ff4500;
+  --color-secondary-dark: #8b0000;
+  --color-optional: #57b33e;
+  --color-heading: #0e0e0e;
+  --color-paragraph: #666666;
+  --black: #000000;
+  --dark: #1d2027;
+  --dark-secondary: #022b6d;
+  --white: #ffffff;
+  --color-primary: #df0a0a;
+
+  /* Background Colors and Gradients */
+  --bg-gray: #f7f7f7;
+  --bg-gradient-deep: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-accent) 50%,
+    var(--color-secondary-dark) 100%
+  );
+  --bg-gradient: linear-gradient(
+    90deg,
+    var(--color-secondary) 0%,
+    var(--color-primary) 100%
+  );
+  --bg-gradient-secondary: linear-gradient(
+    90deg,
+    var(--color-secondary) 40%,
+    #022b6d 100%
+  );
+  --bg-gradient-reverse: linear-gradient(
+    90deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+
+  --header-blue-gradient: linear-gradient(
+    118deg,
+    #001936,
+    #000717,
+    #0a0a0a,
+    #000f4e
+  );
+  --call-bg: linear-gradient(118deg, #020207, #000000c9, #000000b3, #1f0101);
+  --navbar-blue-bg: linear-gradient(130deg, #3f0606, #000717, #0a0a0a, #270c0c);
+  --navbar-gray-bg: linear-gradient(118deg, #001936, #000717, #0a0a0a, #000f4e);
+
+  /* Box Shadows */
+  --box-shadow-primary: -1px 3px 10px 0 rgba(0, 0, 0, 0.6);
+  --box-shadow-secondary: 0 10px 30px 0 rgba(44, 130, 237, 0.4);
+  --box-shadow-regular: 0px 2px 12px 0px #e7e7e7;
+
+  /* Heading Colors */
+  --h1-heading: #191821;
+  --h2-heading: #04141f;
+  --h3-heading: #314352;
+  --h4-heading: #2b374f;
+  --h5-heading: #0a1f3a;
+}
+
+.applyWhite {
+  color: white;
+}
+
+/* ======== for titile ============== */
+.digitechmate_topheading {
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+
+    padding: 0 0 10px 56px;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 10px;
+      width: 40px;
+      height: 2px;
+      background: #ff3c00;
+    }
+  }
+
+  h1 {
+    font-size: 58px;
+    color: #fff;
+    line-height: 1;
+  }
+
+  span {
+    color: #ff3c00;
+  }
+  /* ====================nav================ */
+  --box-shadow: 0px 0px 20px 0px rgba(7, 20, 52, 0.1);
+  --box-shadow-secondary: 0 6px 12px rgba(0, 0, 0, 0.175);
+  --box-shadow-extra: 0 5px 50px 0 rgba(0, 0, 0, 0.15);
+  --box-shadow-dark: 0px 0px 0px;
+}
+
+/* padding Styles */
+
+.default-padding {
+  padding: 100px 90px;
+  position: relative;
+}
+.default-padding-banner {
+  padding: 90px 90px;
+  position: relative;
+}
+
+.default-padding-nav {
+  padding-right: 25px;
+}
+.default-padding-home-service {
+  position: relative;
+  padding: 120px 90px 80px 90px;
+}
+
+.default-padding-top {
+  padding: 80px 0 0;
+}
+
+.default-padding-bottom {
+  padding: 0 0 30px;
+}
+
+.default-padding-footer {
+  padding: 60px 70px;
+  position: relative;
+}
+
+@media (max-width: 807px) {
+  .default-padding {
+    padding: 60px 30px;
+  }
+  .default-padding-banner {
+    padding: 90px 50px;
+  }
+
+  .default-padding-footer {
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 639px) {
+  .default-padding {
+    padding: 80px 30px;
+  }
+}
+@media (max-width: 590px) {
+  .default-padding-home-service {
+    padding: 60px 20px;
+  }
+  .default-padding-banner {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .default-padding {
+    padding: 50px 5px;
+  }
+
+  .default-padding-footer {
+    padding: 50px 5px;
+  }
+}
+
+@media (max-width: 368px) {
+  .default-padding-home-service {
+    padding: 20px 20px;
+  }
+  .default-padding-banner {
+    padding: 60px 40px;
+  }
+}

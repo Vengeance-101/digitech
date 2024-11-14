@@ -1,0 +1,63 @@
+/* ============================================================== 
+    # 404 page
+=================================================================== */
+
+.error-page-area {
+  position: relative;
+  z-index: 1;
+}
+
+.error-page-area .shape-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 20%;
+  background-position: left !important;
+  background-repeat: no-repeat !important;
+  z-index: -1;
+  opacity: 0.3;
+  background-size: contain !important;
+}
+
+.error-page-area .shape-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 20%;
+  background-position: right !important;
+  background-repeat: no-repeat !important;
+  z-index: -1;
+  opacity: 0.3;
+  background-size: contain !important;
+}
+
+.error-box h1 {
+  font-size: 150px;
+  line-height: 110px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  text-shadow: 3px 3px #c0c0c0;
+}
+
+.error-box h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.error-box p {
+  padding: 0 10%;
+}
+
+.error-content h1 {
+  font-size: 80px;
+  text-shadow: 3px 3px #c0c0c0;
+  font-weight: 700;
+}
+
+.error-content h2 {
+  font-weight: 700;
+}

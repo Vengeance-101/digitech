@@ -1,0 +1,44 @@
+// ----------------------------
+.dropDownHidden{
+  opacity: 0;
+  pointer-events: none;
+  transition: all 300ms ease-in-out;
+}
+.dropDownVisible{
+  opacity: 1;
+  pointer-events: all;
+  transition: all 300ms ease-in-out;
+}
+
+li:hover .arrow {
+  transform: rotate(-180deg);
+}
+.sublink-anchor {
+  transition: all 300ms ease-in-out;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+
+
+//  ------------------------------
+.categoryLink {
+  transition: all 300ms ease-in-out;
+}
+.categoryLink:hover .category-icon {
+  background: #f0f1f2;
+}
+.categoryLink:hover .category-tags .category-main-tag {
+  color: red;
+  gap: 0.8rem;
+}
+.d-shape-1 {
+  clip-path: polygon(0 0, 90% 0%, 100% 100%, 0% 100%);
+}
+.d-shape-2 {
+  clip-path: polygon(0 0, 91.5% 0%, 100% 100%, 0% 100%);
+}
+// --------------------active 
+.activelink{
+  color:  red;
+}

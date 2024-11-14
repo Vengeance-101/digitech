@@ -1,0 +1,178 @@
+// Variables
+$color-primary: var(--color-primary);
+$color-heading: var(--color-heading);
+$white: var(--white);
+$dark: var(--dark);
+
+// About Style
+.shape-animated-left {
+  img {
+    position: absolute;
+    &:first-child {
+      left: 0;
+      bottom: 30%;
+    }
+    &:nth-child(2) {
+      left: 0;
+      top: 120px;
+    }
+  }
+}
+
+.thumb-shape-bottom {
+  position: absolute;
+  right: 0px;
+  bottom: -50px;
+  text-align: right;
+
+  img {
+    position: relative;
+    height: auto;
+
+    &:first-child {
+      position: absolute;
+      right: -50px;
+    }
+  }
+}
+
+.digiimg img {
+  border: none;
+  outline: none;
+  width: auto;
+  height: auto;
+}
+
+// Fun Fact
+.fun-fact {
+  display: inline-block;
+  text-align: left;
+
+  &.text-center {
+    text-align: center;
+  }
+
+  .counter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 600;
+    color: $color-heading;
+    line-height: 1;
+    margin-bottom: 5px;
+
+    &.text-center {
+      justify-content: center;
+    }
+
+    &.medium {
+      font-weight: 600;
+      color: $color-heading;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .fun-fact {
+    .counter {
+      font-size: 45px;
+    }
+  }
+}
+
+// About Card
+.about-card {
+  display: inline-block;
+  padding: 50px;
+  background: $dark;
+
+  li {
+    display: flex;
+    margin-top: 30px;
+    border-bottom: 2px solid rgba($white, 0.2);
+    padding-bottom: 15px;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    i {
+      display: inline-block;
+      font-size: 60px;
+      min-width: 85px;
+      position: relative;
+      top: 30px;
+      color: $color-primary;
+    }
+  }
+
+  .fun-fact {
+    .counter {
+      color: $white;
+      line-height: 1;
+      font-size: 50px;
+    }
+
+    .medium {
+      color: $white;
+      font-weight: 600;
+      opacity: 0.8;
+    }
+  }
+}
+
+.about-style-one {
+  .about-card {
+    position: absolute;
+    left: -80px;
+    bottom: -70px;
+  }
+}
+
+// Responsive
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .about-style-one .about-card {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: auto;
+    width: 100%;
+    margin-top: 30px;
+    padding: 50px;
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 50px;
+    }
+
+    li {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about-style-one .about-card {
+    left: 0;
+    top: 0;
+    bottom: auto;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    padding: 50px;
+
+    li {
+      &:last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border: none;
+      }
+
+      padding-bottom: 30px;
+    }
+  }
+}

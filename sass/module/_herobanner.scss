@@ -1,0 +1,13 @@
+.herobg {
+  background-image: url("/bg_digi/banner-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+.digi_text_gradient {
+  background: linear-gradient(91deg, #ca0909, #0570c8 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

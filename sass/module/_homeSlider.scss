@@ -1,0 +1,118 @@
+// ==============================================================
+// Start Consen Slider Area SCSS
+// ==============================================================
+
+.slider-area {
+  background: url(/images/slider/hero-bg.png) center/cover no-repeat;
+  z-index: 1;
+  position: relative;
+}
+
+// Slider Content
+
+.slider-thumb img {
+  filter: brightness(0.5);
+}
+
+// Style Four - Lines
+.lines {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+}
+
+.line {
+  width: 80%;
+  height: 1px;
+  background-color: #e0e0e0;
+  z-index: 5;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 35px;
+    background-color: #ff3b00;
+    animation: moveLeftBounces-one 32s linear infinite;
+  }
+}
+
+@keyframes moveLeftBounces-one {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(538px);
+  }
+}
+
+// Contact Section
+.contact-icon {
+  width: 60px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.contact-number {
+  flex: 1;
+
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 5px;
+
+    a {
+      color: inherit;
+    }
+  }
+}
+
+// Slider Shape
+.slider-shape-thumb {
+  position: absolute;
+  left: -30px;
+  top: 0;
+  animation: moveLeftBounce 4s linear infinite;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.slider-shape-thumb2 {
+  position: absolute;
+  left: -110px;
+  top: 0;
+  animation: moveLeftBounce 3s linear infinite;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+@keyframes moveLeftBounce {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+}
+
+// Additional Styles
+.estiva_video_card,
+.setboxnew {
+  border-radius: 12px 12px 0 0;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+}
+
+.estiva_border_bottom {
+  border-bottom: dashed 1px #ffffff17;
+}
+
+.boxmaintop {
+  border-right: 1px dashed #ffffff17;
+}

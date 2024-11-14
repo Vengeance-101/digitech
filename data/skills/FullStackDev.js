@@ -1,0 +1,36 @@
+export const Skills = [
+  { id: 1, skill: "Full Stack Development" },
+  { id: 2, skill: "Web Development" },
+  { id: 3, skill: "Frontend Development" },
+  { id: 4, skill: "Backend Development" },
+  { id: 5, skill: "Database Management" },
+  { id: 6, skill: "Server Side Development" },
+  { id: 7, skill: "Version Control" },
+  { id: 8, skill: "Cloud Deployment and DevOps" },
+  { id: 9, skill: "Testing" },
+  { id: 10, skill: "Debugging" },
+  { id: 11, skill: "Error Fixing" },
+  { id: 12, skill: "RESTful API" },
+  { id: 13, skill: "Microservices" },
+  { id: 14, skill: "Agile Development" },
+  { id: 15, skill: "Project Management" },
+];
+
+export const SkillsText = {
+  frontend: [
+    "HTML",
+    "CSS",
+    "SASS",
+    "BootStrap",
+    "TailWind CSS",
+    "JavaScript",
+    "Ajax",
+    "JQuery",
+    "TypeScript",
+    "React",
+    "Redux",
+    "Next.js",
+  ],
+  backend: ["Python", "Django", "REST API", "MySQL", "RDBMS"],
+  devops: ["Jenkins", "CI/CD", "Git", "GitHub", "DevTool", "Testing"],
+};

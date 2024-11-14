@@ -1,0 +1,52 @@
+// Variables (optional, for reuse)
+$border-color: #ddd;
+$margin-left-thumb: -100px;
+$margin-right-thumb: 50px;
+$margin-right-icon-thumb: 20px;
+$margin-bottom-icon-box: 30px;
+$padding-bottom-icon-box: 10px;
+
+// ---------------------home about
+.about-area {
+  &.new-style {
+    .about-thumb {
+      position: relative;
+      margin-left: $margin-left-thumb;
+      margin-right: $margin-right-thumb;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .about-icon-thumb {
+      float: left;
+      margin-right: $margin-right-icon-thumb;
+    }
+
+    .about-icon-box {
+      margin-bottom: $margin-bottom-icon-box;
+      border-bottom: 1px solid $border-color;
+      padding-bottom: $padding-bottom-icon-box;
+
+      &.border-non {
+        border-bottom: none;
+      }
+    }
+
+    .about-box-content {
+      overflow: hidden;
+    }
+  }
+}
+
+// Digi feature area
+.digi-feature-area {
+  background: url("/bg/estiva_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  // Optional: comment out or change background if needed
+  // background: url("/bg/digiabout.png");
+}
